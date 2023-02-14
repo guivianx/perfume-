@@ -1,0 +1,116 @@
+:root {
+    --White: #ffffff;
+    --Cream: #f2ebe3;
+    --Dark-grayish-blue: #6c7289;
+    --Dark-cyan: #3c8067;
+    --Very-dark-blue: #1c232b;
+
+
+    /*  - Mobile: 375px
+        - Desktop: 1440px   
+        - Font size (paragraph): 14px
+    */
+
+    --fonte-Montserrat: 'Montserrat', 'arial';
+    --fonte-Fraunces: 'Fraunces', 'arial';
+}
+
+
+body {
+    display: flex;
+    background-color: var(--Cream);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.13);
+    background-color: var(--White);
+    width: 640px;
+    display: flex;
+    border-radius: 10px;
+}
+
+main picture {
+    height: 480px;
+}
+
+main img {
+    height: 100%;
+    width: 320px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+main section h1 {
+    font-size: 2.2rem;
+    padding: 0px 50px 0px 25px;
+    font-family: var(--fonte-Fraunces);
+    color: var(--Very-dark-blue);
+    
+}
+
+main section .p {
+    font-size: 14px;
+    font-family: var(--fonte-Montserrat);
+    color: var(--Dark-grayish-blue);
+    padding: 25px 25px 15px 25px;
+    text-align: left;
+}
+
+#p2 {
+    line-height: 25px;
+    padding: 20px 50px 5px 25px;
+}
+
+div {
+    gap: 20px;
+    display: flex;
+    padding: 15px 25px 15px 25px;
+    align-items: center;
+}
+
+div .preco1 {
+    font-family: var(--fonte-Fraunces);
+    color: var(--Dark-cyan);
+    font-size: 2rem;
+}
+
+div .preco2 {
+    font-family: var(--fonte-Montserrat);
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+}
+
+
+section .bttn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+    border-radius: 10px;
+    align-items: center;
+    color: var(--White);
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    padding: 15px 35px 15px 35px;
+    background-color: var(--Dark-cyan);
+    font-family: var(--fonte-Montserrat);
+}
+
+button:active {
+    background-color: #1d3f32;
+}
